@@ -9,4 +9,5 @@ def factorial(n):
             return n
         else:
             return n * factorial(n+1)
-factorial(-2)
+n = int(input("Enter an integer: "))
+print("factorial of the number =" + str(factorial(n)))
