@@ -1,18 +1,10 @@
 #include <stdio.h>
-
 int main() {
-    int s=0,m=0,n=0,t=0;
-    printf("Enter any integer");
-    scanf("%d", &n);
-   if (n >= 0){
-       int i;
-        for(i=1;i<=n;++i){
-            s +=i;
-        }
-        printf("Sum of integers till the number:%d", s);
-   }
-   else{
-        printf("please enter positive integers");
+    int s =0, i;
+    for (i = 1; i <= 100; ++i) {
+        // condition for non-prime
+        s=s+i;
     }
-    return 0;
+    printf("Sum of numbers from 1 to 100 = %d" , s);
+     return 0;
 }
