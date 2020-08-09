@@ -12,13 +12,8 @@ int main() {
         printf("factorial:%d", s);
    }
    else{
-       m=-1*n;
-        int i;
-        for(i=1;i<=m;++i){
-            s =s*i;
-        }
-        t=-1*s;
-        printf("factorial:%d", t);
+       
+        printf("please choose positive integers to find factorial");
     }
     return 0;
 }
