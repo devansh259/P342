@@ -12,13 +12,7 @@ int main() {
         printf("Sum of integers till the number:%d", s);
    }
    else{
-       m=-1*n;
-        int i;
-        for(i=1;i<=m;++i){
-            s +=i;
-        }
-        t=-1*s;
-        printf("Sum of integers till the number:%d", t);
+        printf("please enter positive integers");
     }
     return 0;
 }
