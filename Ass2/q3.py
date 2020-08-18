@@ -7,7 +7,9 @@ n=[[-1,2,7],
 
 a=[2,5,7]
 b=[]
-p=[[0,0,0],[0,0,0],[0,0,0]]
+p=[[0,0,0],
+   [0,0,0],
+   [0,0,0]]
 for row in m:
 	sum=0
 	for i in range(3):
@@ -20,5 +22,6 @@ for i in range(len(m)):
 			p[i][j]+= m[i][k] * n[k][j]
 
 print("Product of A and M = " + str(b))
-print("Product of M and N = " + str(p))
-	
+print("Product of M and N = ")
+for row in p:
+    print(row)
