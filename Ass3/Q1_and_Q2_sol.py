@@ -5,7 +5,6 @@ def partial_pivot(a,b):
 				if(abs(a[j][i]) > abs(a[i][i])):
 					a[i],a[j]=a[j],a[i]
 					b[i],b[j]=b[j],b[i]
-	return a,b
 
 def gauss_jordan(a,b):
 	partial_pivot(a,b)
@@ -21,7 +20,6 @@ def gauss_jordan(a,b):
 			for l in range(i,len(a)):
 				a[k][l]=a[k][l]-factor*a[i][l]
 			b[k] = b[k]-factor*b[i]
-	return a,b 
 
 print("Question_1 :")
 vect= open("b1.txt","r")
