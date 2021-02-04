@@ -1,6 +1,19 @@
 import math
 import random
 
+#linear fit function
+def linear_fit(x,y):
+    d1=0
+    d2=0
+
+    for i in range(len(x)):
+        d1+=x[i]*y[i]
+        d2+=x[i]*x[i]
+    a1=((len(x)*d1) - (sum(x)*sum(y)))/((len(x)*d2)-(sum(x)*sum(x)))
+    a0=(sum(y)-a1*sum(x))/len(x)
+
+    return a0,a1
+
 
 #monte carlo method
 def ellipsoid(a, b, c, N):
