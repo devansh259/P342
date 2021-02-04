@@ -10,3 +10,7 @@ t=(4/math.sqrt(9.8))*t1
 
 print("value of T for N=10 :")
 print(t1)
+
+#output
+#value of T for N=10 :
+#1.933830289514004
